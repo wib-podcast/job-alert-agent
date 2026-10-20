@@ -1,0 +1,504 @@
+{
+ "results": [
+  {
+   "uuid": "1eb63da6e7fec6ac51731128f37f958c",
+   "score": 0.9636121104472347,
+   "title_match_score": 4,
+   "job_role_score": 3,
+   "skills_match_score": 0,
+   "recency_score": 1.0535743,
+   "metadata": {
+    "jobPostId": "MCF-2026-1674769",
+    "updatedAt": "2026-09-22T08:45:48",
+    "newPostingDate": "2026-09-22",
+    "totalNumberJobApplication": 0,
+    "isPostedOnBehalf": false,
+    "isHideSalary": false,
+    "isHideHiringEmployerName": false,
+    "jobDetailsUrl": "https://www.mycareersfuture.gov.sg/job/professional-services/product-manager-accels-technology-sg-1eb63da6e7fec6ac51731128f37f958c"
+   },
+   "address": {
+    "overseasCountry": null,
+    "foreignAddress1": null,
+    "foreignAddress2": null,
+    "block": "8",
+    "street": "MARINA VIEW",
+    "floor": null,
+    "unit": null,
+    "building": "ASIA SQUARE TOWER 1",
+    "postalCode": "018960",
+    "isOverseas": false,
+    "districts": [
+     {
+      "id": 1,
+      "location": "D01 Marina, Raffles Place, People's Park, Cecil",
+      "region": "Central",
+      "sectors": [
+       "01",
+       "02",
+       "03",
+       "04",
+       "05",
+       "06"
+      ],
+      "regionId": "Central"
+     }
+    ],
+    "lat": 1.27894102286368,
+    "lng": 103.851255908066
+   },
+   "hiringCompany": null,
+   "positionLevels": [
+    {
+     "id": 2,
+     "position": "Middle Management"
+    }
+   ],
+   "schemes": [],
+   "flexibleWorkArrangements": [
+    {
+     "id": 1,
+     "flexibleWorkArrangement": "Flexi-Hours"
+    }
+   ],
+   "salary": {
+    "minimum": 20000,
+    "maximum": 24000,
+    "type": {
+     "salaryType": "Monthly"
+    }
+   },
+   "postedCompany": {
+    "uen": "202327547K",
+    "name": "ACCELS TECHNOLOGY SG PTE. LTD.",
+    "logoFileName": null,
+    "logoUploadPath": null,
+    "responsiveEmployer": {
+     "isResponsive": false
+    }
+   },
+   "skills": [
+    {
+     "skill": "Product Knowledge",
+     "uuid": "008a8d8a377a59673ee533a01f0590a2"
+    },
+    {
+     "skill": "Liaising with cross functional teams",
+     "uuid": "09ed8f700f626807fc1f48788c96de29"
+    },
+    {
+     "skill": "Cloud Technologies",
+     "uuid": "0ca3152f26a356fce94b710fd0ba75bf"
+    },
+    {
+     "skill": "Marketing Enterprise Software",
+     "uuid": "1f988c001a0ce4362791df0c620a0f53"
+    },
+    {
+     "skill": "Cost Management",
+     "uuid": "4e0c7fb2fac186d1b3b5afd0fe2c278a"
+    },
+    {
+     "skill": "Agile",
+     "uuid": "657fd3eec6624217c3ad5de3744a69d2"
+    },
+    {
+     "skill": "Model Selection",
+     "uuid": "6f20db3932fdb473b6a8afb9a42c7148"
+    },
+    {
+     "skill": "Computer Science",
+     "uuid": "8329f5105520a1b72d062628c077ddfa"
+    },
+    {
+     "skill": "Fluent English",
+     "uuid": "85a8adb0af98dc8ba3e4312c3d58f09a"
+    },
+    {
+     "skill": "AI Models",
+     "uuid": "8926aaf6132dfa0d9acb42076c109f34"
+    },
+    {
+     "skill": "Interpret Business Needs",
+     "uuid": "8e6be3c33a8b660fa5e2cb24ac778d86"
+    },
+    {
+     "skill": "Working alongside Product Teams",
+     "uuid": "a47e3b58b6aae7627687bff5a2f51499"
+    },
+    {
+     "skill": "Product Roadmap",
+     "uuid": "c3fbf1bebf5fb2aef59c2ea8bb36aa4e"
+    },
+    {
+     "skill": "Customer Requirements Analysis",
+     "uuid": "cb10d80baf7c744ef4b04221a4fb4571"
+    },
+    {
+     "skill": "Product Development",
+     "uuid": "d324e27fb1cf5931e17c08a9a85f76bf"
+    },
+    {
+     "skill": "Language Models",
+     "uuid": "db05b5c69f26d9b4582034a72e46b2a5"
+    },
+    {
+     "skill": "Stakeholder Management",
+     "uuid": "df48c911be7822810d6973e86dca6cd6"
+    },
+    {
+     "skill": "Work in A Fast Paced Environment",
+     "uuid": "e16ba891ec3bf56bc3e09c1cee2f3bb0"
+    },
+    {
+     "skill": "Billing Management",
+     "uuid": "f353647d062ce9c3e38438e2f093bd53"
+    },
+    {
+     "skill": "Agile Development",
+     "uuid": "fc05f27a44bc4ce1eea2ac8ca10706de"
+    }
+   ],
+   "employmentTypes": [
+    {
+     "id": 8,
+     "employmentType": "Full Time"
+    }
+   ],
+   "categories": [
+    {
+     "id": 29,
+     "category": "Professional Services"
+    }
+   ],
+   "shiftPattern": null,
+   "title": "Product Manager",
+   "status": {
+    "id": "102",
+    "jobStatus": "Open"
+   },
+   "retriever_score": 8.6418
+  },
+  {
+   "uuid": "719f0706dfe5aea4b2118f0ae508122c",
+   "score": 0.6849405454709436,
+   "title_match_score": 4,
+   "job_role_score": 3,
+   "skills_match_score": 0,
+   "recency_score": 1.0300233,
+   "metadata": {
+    "jobPostId": "MCF-2026-1661598",
+    "updatedAt": "2026-09-21T02:33:29",
+    "newPostingDate": "2026-09-21",
+    "totalNumberJobApplication": 0,
+    "isPostedOnBehalf": false,
+    "isHideSalary": false,
+    "isHideHiringEmployerName": false,
+    "jobDetailsUrl": "https://www.mycareersfuture.gov.sg/job/accounting/product-manager-asia-properties-assets-consultancy-719f0706dfe5aea4b2118f0ae508122c"
+   },
+   "address": {
+    "overseasCountry": null,
+    "foreignAddress1": null,
+    "foreignAddress2": null,
+    "block": "33",
+    "street": "UBI AVENUE 3",
+    "floor": null,
+    "unit": null,
+    "building": "VERTEX",
+    "postalCode": "408868",
+    "isOverseas": false,
+    "districts": [
+     {
+      "id": 14,
+      "location": "D14 Geylang, Eunos",
+      "region": "Central",
+      "sectors": [
+       "38",
+       "39",
+       "40",
+       "41"
+      ],
+      "regionId": "Central"
+     }
+    ],
+    "lat": 1.33292970284991,
+    "lng": 103.894107723466
+   },
+   "hiringCompany": null,
+   "positionLevels": [
+    {
+     "id": 3,
+     "position": "Manager"
+    }
+   ],
+   "schemes": [],
+   "flexibleWorkArrangements": [],
+   "salary": {
+    "minimum": 10000,
+    "maximum": 12000,
+    "type": {
+     "salaryType": "Monthly"
+    }
+   },
+   "postedCompany": {
+    "uen": "201826809C",
+    "name": "ASIA PROPERTIES & ASSETS CONSULTANCY PTE. LTD.",
+    "logoFileName": "e621c014dca8e4148d4d705a6127065d/asia-properties-assets-consultancy.png",
+    "logoUploadPath": "https://static.mycareersfuture.gov.sg/images/company/logos/e621c014dca8e4148d4d705a6127065d/asia-properties-assets-consultancy.png",
+    "responsiveEmployer": {
+     "isResponsive": true
+    }
+   },
+   "skills": [
+    {
+     "skill": "Product Marketing",
+     "uuid": "356633816b7d63bff6c7a2d20d66fb0d"
+    },
+    {
+     "skill": "maintaining spreadsheets",
+     "uuid": "42215ee615ff1609158845132aec9e46"
+    },
+    {
+     "skill": "ERP",
+     "uuid": "5202bfaff162a71345cc0f3dde1940a4"
+    },
+    {
+     "skill": "Risk",
+     "uuid": "59ca88f7b0e80cdd9af330af600a9ff6"
+    },
+    {
+     "skill": "Quick Learning",
+     "uuid": "5abad6c4c73d9fb572877c383f3434b1"
+    },
+    {
+     "skill": "Logistics contracts",
+     "uuid": "6877afe4a0a649bc37d5db5c4ba90f4f"
+    },
+    {
+     "skill": "Customer Supply Chain",
+     "uuid": "6ce216fc43d33625c42a01bf6a02f692"
+    },
+    {
+     "skill": "B2B",
+     "uuid": "91e32a5fc05beb6db7bf9cd75b53e586"
+    },
+    {
+     "skill": "Product Management",
+     "uuid": "948590535142d16883c105bb52330fb2"
+    },
+    {
+     "skill": "Enterprise Software",
+     "uuid": "94f111dd47b8385d1a00bfb46c422a0b"
+    },
+    {
+     "skill": "Data Integrity",
+     "uuid": "9b93857d6f6087660807bbe58f2c4fc4"
+    },
+    {
+     "skill": "Business Logic",
+     "uuid": "9ebada18d85d2e8202311869a893d6a0"
+    },
+    {
+     "skill": "Insurance Claims Handling",
+     "uuid": "c9418ea655196b6431e3fcc5922b8656"
+    },
+    {
+     "skill": "Product Development",
+     "uuid": "d324e27fb1cf5931e17c08a9a85f76bf"
+    },
+    {
+     "skill": "Vertical Market",
+     "uuid": "e4fca7f5a2deffe0a22d4e9ff26b84d1"
+    },
+    {
+     "skill": "Software Development",
+     "uuid": "f287f429e4026672e5754c1201691e49"
+    }
+   ],
+   "employmentTypes": [
+    {
+     "id": 8,
+     "employmentType": "Full Time"
+    }
+   ],
+   "categories": [
+    {
+     "id": 1,
+     "category": "Accounting / Auditing / Taxation"
+    },
+    {
+     "id": 11,
+     "category": "Engineering"
+    },
+    {
+     "id": 21,
+     "category": "Information Technology"
+    },
+    {
+     "id": 29,
+     "category": "Professional Services"
+    },
+    {
+     "id": 32,
+     "category": "Real Estate / Property Management"
+    }
+   ],
+   "shiftPattern": null,
+   "title": "Product Manager",
+   "status": {
+    "id": "102",
+    "jobStatus": "Open"
+   },
+   "retriever_score": 8.397645
+  },
+  {
+   "uuid": "25cd9b7d941f460a327ed3d5f48c41e5",
+   "score": 0.6759497918360244,
+   "title_match_score": 0.10500057,
+   "job_role_score": 1.3736485,
+   "skills_match_score": 0,
+   "recency_score": 1.2,
+   "metadata": {
+    "jobPostId": "MCF-2026-1680729",
+    "updatedAt": "2026-09-23T06:01:59",
+    "newPostingDate": "2026-09-23",
+    "totalNumberJobApplication": 0,
+    "isPostedOnBehalf": false,
+    "isHideSalary": false,
+    "isHideHiringEmployerName": false,
+    "jobDetailsUrl": "https://www.mycareersfuture.gov.sg/job/professional-services/ai-product-manager-nicoll-curtin-technology-25cd9b7d941f460a327ed3d5f48c41e5"
+   },
+   "address": {
+    "overseasCountry": null,
+    "foreignAddress1": null,
+    "foreignAddress2": null,
+    "block": null,
+    "street": null,
+    "floor": null,
+    "unit": null,
+    "building": null,
+    "postalCode": null,
+    "isOverseas": false,
+    "districts": [
+     {
+      "id": 998,
+      "location": "Islandwide",
+      "region": "Islandwide",
+      "sectors": [],
+      "regionId": "Islandwide"
+     }
+    ]
+   },
+   "hiringCompany": null,
+   "positionLevels": [
+    {
+     "id": 8,
+     "position": "Senior Executive"
+    }
+   ],
+   "schemes": [],
+   "flexibleWorkArrangements": [],
+   "salary": {
+    "minimum": 12000,
+    "maximum": 15000,
+    "type": {
+     "salaryType": "Monthly"
+    }
+   },
+   "postedCompany": {
+    "uen": "201103389Z",
+    "name": "NICOLL CURTIN TECHNOLOGY PTE. LTD.",
+    "logoFileName": "359c9b24eb9c9447e89307f1dea5fde3/nicoll-curtin-technology.jpg",
+    "logoUploadPath": "https://static.mycareersfuture.gov.sg/images/company/logos/359c9b24eb9c9447e89307f1dea5fde3/nicoll-curtin-technology.jpg",
+    "responsiveEmployer": {
+     "isResponsive": false
+    }
+   },
+   "skills": [
+    {
+     "skill": "Interface with engineers",
+     "uuid": "0434fffce7f4fdd2ef4eca2d63845881"
+    },
+    {
+     "skill": "Feasibility Studies",
+     "uuid": "0b5d0c1d580e8b3ad373f867c2c7d345"
+    },
+    {
+     "skill": "Finding the problems",
+     "uuid": "163bafe41bc939a5c35be9827afed954"
+    },
+    {
+     "skill": "Product Evaluation",
+     "uuid": "32f196377dc5cfc05b67627c8f5457db"
+    },
+    {
+     "skill": "Agents",
+     "uuid": "375099f0c804e924c1dc275370710d92"
+    },
+    {
+     "skill": "Programming tools",
+     "uuid": "3d32bf366e258bcb67e25030bc7979a8"
+    },
+    {
+     "skill": "Communicating With Agents",
+     "uuid": "3e4e2aecbe1d5d89cb204a258d111d8c"
+    },
+    {
+     "skill": "Rule-based system",
+     "uuid": "43414fd3b402cb6d4940bac1798c1186"
+    },
+    {
+     "skill": "Build Prototypes",
+     "uuid": "681b8a7fc30287f8164faf534419186f"
+    },
+    {
+     "skill": "Identify product opportunities",
+     "uuid": "80553c78dac95a600f52b1770a8e64dd"
+    },
+    {
+     "skill": "Prototyping",
+     "uuid": "91f8ef7f8cee2899cb5316ab8f88dfd3"
+    },
+    {
+     "skill": "LLMs",
+     "uuid": "a54750ca93027f5b2c652399259459ab"
+    },
+    {
+     "skill": "Quality Models",
+     "uuid": "b7fa71694c4bd2b9f1744f05acf4941a"
+    },
+    {
+     "skill": "Claude Code",
+     "uuid": "ca4c74eb3440063d1386c960f22b8a38"
+    },
+    {
+     "skill": "Business Value",
+     "uuid": "db24d0afba7300126b09a6925b7e31b8"
+    },
+    {
+     "skill": "launching",
+     "uuid": "fbd29b7abab1d8c7e65e9bcae8278426"
+    }
+   ],
+   "employmentTypes": [
+    {
+     "id": 7,
+     "employmentType": "Permanent"
+    }
+   ],
+   "categories": [
+    {
+     "id": 29,
+     "category": "Professional Services"
+    }
+   ],
+   "shiftPattern": null,
+   "title": "AI Product Manager",
+   "status": {
+    "id": "102",
+    "jobStatus": "Open"
+   },
+   "retriever_score": 2.954044
+  }
+ ]
+}

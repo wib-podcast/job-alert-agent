@@ -1,0 +1,36 @@
+# Environment
+.env
+.env.local
+
+# Data files (never commit real data)
+data/*.csv
+data/*.txt
+data/*.db
+# SQLite is in WAL mode — these sidecars can reach hundreds of MB
+data/*.db-wal
+data/*.db-shm
+data/*.json
+data/google_credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Playwright browsers
+.playwright/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+.vercel

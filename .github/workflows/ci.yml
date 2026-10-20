@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  python:
+    name: pipeline
+    runs-on: ubuntu-latest
+
+    # A throwaway Postgres, so the storage tests run against the real thing
+    # without needing a secret or touching the production Neon database.
+    # Tests isolate themselves further by creating a schema per test.
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: jobs_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/jobs_test
+
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+
+      # Correctness gate, not a style gate — see pyproject.toml. This is what
+      # caught `known_ids` being referenced outside the scope it was defined in.
+      - name: Lint
+        run: ruff check .
+
+      - name: Test
+        run: pytest -q
+
+      # Scrapers and the digest can't be exercised in CI, but they can at least
+      # be proven to import — a typo in a Playwright selector module or an email
+      # template shouldn't wait until 8 AM IST to surface.
+      #
+      # Placeholders only. config.py raises at import if these are absent, so
+      # modules that reach for `cfg` need them present to import at all. If this
+      # step ever needs a *real* key, something is making a network call at
+      # module scope that belongs inside a function.
+      - name: Import check
+        env:
+          ANTHROPIC_API_KEY: ci-placeholder-not-a-real-key
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/jobs_test
+        run: |
+          python -c "import models, db, config"
+          python -c "from scrapers import iimjobs, linkedin, mycareersfuture, naukri"
+          python -c "from outputs import email_digest"
+
+  web:
+    name: board
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - name: Build
+        # Placeholders only — the build must not need real credentials. If this
+        # step starts requiring a live database, something is being read at
+        # module scope that should be read per-request.
+        env:
+          DATABASE_URL: postgresql://user:pass@localhost:5432/placeholder
+          AUTH_SECRET: ci-placeholder-secret
+        run: npm run build

@@ -1,0 +1,31 @@
+# Scraping
+playwright==1.44.0
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# LLM
+anthropic>=0.40.0
+
+# Database
+psycopg[binary]==3.2.13
+
+# Data / validation
+pydantic==2.7.4
+pandas>=2.0.0
+
+# Dashboard
+streamlit>=1.35.0
+
+# Email
+resend==2.0.0
+
+# Google Sheets
+gspread==6.1.2
+google-auth==2.30.0
+
+# Fuzzy matching
+rapidfuzz==3.9.3
+
+# Env
+python-dotenv==1.0.1

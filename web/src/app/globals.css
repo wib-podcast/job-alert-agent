@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+/*
+ * Ported from dashboard.py's Streamlit theme so the two surfaces look like one
+ * product. Dark slate ground, amber as the only accent, and score colours that
+ * are semantic rather than decorative.
+ *
+ * Every colour is a token. A raw hex in a component is a bug.
+ */
+:root {
+  --bg: #111318;
+  --sidebar: #0d0f14;
+  --surface: #1a1d24;
+  --surface-sunken: #151820;
+  --input: #1e2130;
+
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(245, 158, 11, 0.15);
+  --border-hover: rgba(245, 158, 11, 0.35);
+
+  --text: #e5e7eb;
+  --text-dim: #9ca3af;
+  --text-faint: #6b7280;
+
+  --amber: #f59e0b;
+  --amber-mid: #d97706;
+  --amber-deep: #b45309;
+
+  /* Score bands — green ≥8, blue ≥6, grey below. Matches score_badge_html. */
+  --score-high-bg: #065f46;
+  --score-high-fg: #6ee7b7;
+  --score-high-br: #10b981;
+  --score-mid-bg: #1e3a5f;
+  --score-mid-fg: #93c5fd;
+  --score-mid-br: #3b82f6;
+  --score-low-bg: #1f2937;
+  --score-low-fg: #9ca3af;
+  --score-low-br: #374151;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-sidebar: var(--sidebar);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-input: var(--input);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-dim: var(--text-dim);
+  --color-faint: var(--text-faint);
+  --color-amber: var(--amber);
+  --color-amber-mid: var(--amber-mid);
+  --color-amber-deep: var(--amber-deep);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg);
+  /* The two glows from the Streamlit build: warm top-left, cool bottom-right. */
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(245, 158, 11, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ══ The gradient wordmark ══ */
+.glow-title {
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24, #fde68a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ══ Character quote ══ */
+.character-quote {
+  background: linear-gradient(90deg, rgba(180, 83, 9, 0.15), rgba(180, 83, 9, 0.05));
+  border-left: 3px solid var(--amber-mid);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  font-style: italic;
+  color: #d1d5db;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+/* ══ Character portrait frame ══ */
+.char-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
+}
+
+/* ══ Primary CTA — the amber gradient button ══ */
+.btn-primary {
+  background: linear-gradient(135deg, var(--amber-deep) 0%, var(--amber-mid) 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 2px 14px rgba(217, 119, 6, 0.3);
+  transition: all 0.15s;
+}
+.btn-primary:hover:not(:disabled) {
+  box-shadow: 0 4px 20px rgba(217, 119, 6, 0.5);
+  transform: translateY(-1px);
+}
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  background: var(--input);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #d1d5db;
+  transition: border-color 0.15s;
+}
+.btn-ghost:hover:not(:disabled) {
+  border-color: var(--border-hover);
+}
+
+/* ══ Form controls ══ */
+.field {
+  background-color: var(--input);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  color: #f3f4f6;
+  caret-color: var(--amber);
+}
+.field:focus {
+  border-color: var(--amber-mid);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.15);
+}
+.field::placeholder {
+  color: var(--text-faint);
+}
+
+/* ══ Tabs ══ */
+.tab-list {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 4px 6px;
+  border: 1px solid var(--border-strong);
+}
+.tab {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  border-radius: 7px;
+  padding: 7px 14px;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.tab:hover {
+  color: var(--text);
+}
+.tab[aria-selected="true"] {
+  background: linear-gradient(135deg, var(--amber-deep), var(--amber-mid));
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(217, 119, 6, 0.35);
+}
+
+/* ══ Metric card ══ */
+.metric {
+  background: var(--surface);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+.metric-value {
+  color: var(--amber);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.metric-label {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+/* ══ Score pills ══ */
+.score-pill {
+  padding: 1px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid;
+}
+.score-high {
+  background: var(--score-high-bg);
+  color: var(--score-high-fg);
+  border-color: var(--score-high-br);
+}
+.score-mid {
+  background: var(--score-mid-bg);
+  color: var(--score-mid-fg);
+  border-color: var(--score-mid-br);
+}
+.score-low {
+  background: var(--score-low-bg);
+  color: var(--score-low-fg);
+  border-color: var(--score-low-br);
+}
+
+/* ══ Expandable job card ══ */
+.card summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 12px 16px;
+  cursor: pointer;
+  list-style: none;
+  transition: border-color 0.15s;
+}
+.card summary::-webkit-details-marker {
+  display: none;
+}
+.card summary:hover {
+  border-color: var(--border-hover);
+}
+.card[open] summary {
+  border-radius: 9px 9px 0 0;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+.card-body {
+  background: var(--surface-sunken);
+  border: 1px solid var(--border-strong);
+  border-top: none;
+  border-radius: 0 0 9px 9px;
+  padding: 12px 16px;
+}
+
+/* ══ Skill / code pill ══ */
+.pill {
+  background: #0d0f14;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 5px;
+  color: #a3e635;
+  font-size: 11px;
+  padding: 2px 7px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
